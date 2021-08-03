@@ -1,0 +1,125 @@
+<!--ICT-18-812-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container col-lg-7 mt-5 mb-5 p-5 shadow">
+        <h1 class="text-center">Registration Form</h1>
+        <hr>
+        <form name="RegisterForm" id="RegisterForm" method="POST">
+            <div class="form-group mb-3" style="padding-left: 25pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>First Name</b></label>
+                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="First Name" id="fname" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="fnamealert"></p>
+            </div>
+
+            <div class="form-group mb-3" style="padding-left: 27pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>Last Name</b></label>
+                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Last Name" id="lname" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="lnamealert"></p>
+            </div>
+            <div class="form-group mb-3" style="padding-left: 60pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>DOB</b></label>
+                        <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                    </div>
+                    <input type="date" class="form-control" placeholder="mm/dd/yy" id="dob" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="dobalert"></p>
+            </div>
+
+            <div class="form-group mb-3" style="padding-left: 65pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>NIC</b></label>
+                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="123456789V OR 123456789000" id="nic" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="nicalert"></p>
+            </div>
+
+            <div class="form-group mb-3" style="padding-left: 46pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>Faculty</b></label>
+                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                    </div>
+                    <select class="form-control" required>
+                        <option selected disabled value="">Select your Faculty</option>
+                        <option>Humanities and Social Sciences</option>
+                        <option>Applied Sciences</option>
+                        <option>Management Studies and Commerce</option>
+                        <option>Medical Sciences</option>
+                        <option>Graduate Studies</option>
+                        <option>Technology</option>
+                        <option>Engineering</option>
+                        <option>Allied Health Sciences</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group mb-3" style="padding-left: 50pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>E-Mail</b></label>
+                        <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                    </div>
+                    <input type="email" class="form-control" placeholder="E-Mail Address" id="email" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="emailalert"></p>
+            </div>
+
+            <div class="form-group mb-3">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>Confirm E-Mail</b></label>
+                        <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                    </div>
+                    <input type="email" class="form-control" placeholder="E-Mail Address" id="conf_email" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="conf-emailalert"></p>
+            </div>
+
+            <div class="form-group mb-3" style="padding-left: 18pt;">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <label class="mr-3"><b>Contact No.</b></label>
+                        <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="contact" required>
+                </div>
+                <p class="alert-danger" style="padding-left: 2%;" id="contactalert"></p>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-warning text-white">&emsp;&emsp;Submit&nbsp;<i
+                        class="fas fa-paper-plane"></i>&emsp;&emsp;</button>
+            </div>
+        </form>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="fontawesome.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+
+</html>
